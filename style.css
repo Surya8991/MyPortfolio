@@ -1,0 +1,399 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Playfair+Display&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+.logo {
+  font-family: "Playfair Display", serif;
+}
+.container {
+  display: flex;
+}
+.sidebar {
+  width: 300px;
+  background-color: #86E5FF;
+  font-family: "Merriweather", serif;
+}
+.navBar {
+  background-color: #0081C9;
+  display: flex;
+  height: 1220px;
+  flex-direction: column;
+  list-style: none;
+  text-align: center;
+  padding: 40px 20px;
+}
+.sidebar nav li {
+  padding: 20px 10px;
+  font-weight: 700;
+  font-size: 30px;
+}
+.sidebar nav li a {
+  text-decoration: none;
+  color: black;
+}
+.navBar.active {
+  display: none;
+  width: 200px;
+  height: 1220px;
+}
+.main {
+  width: 85vw;
+  height: 1300px;
+  background-color: #86E5FF;
+}
+/* Toggle */
+a.toggleButton {
+  border: 2px solid black;
+  height: 30px;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+span.line {
+  background-color: black;
+  height: 10px;
+  width: 20px;
+  margin: 3px;
+  /* border: 2px black; */
+}
+/* Index page */
+.infoContainer {
+  margin: 75px 25px;
+  width: 80vw;
+  height: 40vh;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 30px;
+  box-shadow: 0px 5px 10px rgb(70, 68, 68);
+}
+.infoContainer .devPic img {
+  height: 40vh;
+  border-radius: 55%;
+  border: 2px solid white;
+  justify-content: center;
+}
+.infoContainer .devInfo {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.hello {
+  font-size: 30px;
+}
+.name {
+  font-weight: bold;
+  font-size: 45px;
+}
+.about {
+  font-size: 25px;
+}
+.description {
+  font-size: 25px;
+  margin-top: 15px;
+}
+button {
+  margin: 10px;
+  padding: 10px;
+  background-color: aqua;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  box-shadow: 0px 5px 10px rgb(70, 68, 68);
+}
+button:hover {
+  background-color: black;
+  color: white;
+}
+
+/* For Contact Form */
+.contactForm {
+  padding: 50px;
+}
+.contactForm h1 {
+  font-family: "Merriweather", serif;
+  text-align: center;
+  font-weight: 300;
+  margin: 10px;
+}
+.contactForm .formInputs {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  font-weight: bold;
+  font-size: 15px;
+}
+input,
+#formMessage {
+  margin-top: 10px;
+  font-size: 15px;
+  padding: 5px;
+  border-radius: 5px;
+}
+.contactForm button {
+  justify-content: center;
+}
+
+/* Blog Website */
+.blogContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+.blog {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px;
+}
+.blogTitle {
+  text-align: center;
+  margin: 20px;
+}
+.blogContainer .blog p {
+  padding: 10px;
+  width: 250px;
+}
+.blogContainer .blog a {
+  text-decoration: none;
+  color: black;
+}
+.blogContainer .blog img {
+  width: 350px;
+  height: 200px;
+  border-radius: 2%;
+}
+.blogLink {
+  display: block;
+}
+
+/* Project Website */
+.projContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+.proj {
+  display: inline-flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 5px;
+}
+.projTitle {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.projContainer .proj p {
+  text-align: center;
+  font-weight: 500;
+  padding: 10px;
+  width: 250px;
+}
+.projContainer .proj a {
+  text-decoration: none;
+  color: black;
+}
+.projContainer .proj img {
+  width: 250px;
+  height: 200px;
+  padding: 10px;
+  border-radius: 2%;
+}
+.blogLink {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+/* Intro Page */
+.aboutContainer {
+  margin: 75px 25px;
+  width: 80vw;
+  height: 30vh;
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: 0px 5px 10px rgb(70, 68, 68);
+}
+.aboutContainer h2 {
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  text-decoration: underline;
+  padding: 10px;
+}
+.aboutContainer .aboutDesc {
+  padding-top: 10px;
+  padding-left: 10px;
+  text-align: start;
+}
+.aboutContainer .aboutDesc p {
+  padding: 5px;
+  font-size: 18px;
+  font-weight: 500;
+}
+/* Skills in Intro Page */
+.skillContainer {
+  text-align: center;
+  margin-left: 20px;
+  padding-bottom: 50px;
+}
+.skills {
+  border-radius: 5px;
+  width: 80%;
+}
+.skills p {
+  text-align: start;
+  padding: 10px 0px;
+}
+/* Container for skill bars */
+.container {
+  width: 100%; /* Full width */
+  background-color: #ddd; /* Grey background */
+  border-radius: 20px;
+}
+.skills {
+  text-align: right; /* Right-align text */
+  padding-top: 10px; /* Add top padding */
+  padding-bottom: 10px; /* Add bottom padding */
+  color: black; /* White text color */
+}
+
+.w95 {
+  width: 95%;
+  background-color: #04aa6d;
+} /* Green */
+.w85 {
+  width: 85%;
+  background-color: #2196f3;
+} /* Blue */
+.w75 {
+  width: 75%;
+  background-color: #3af5d9;
+} /* Red */
+.w80 {
+  width: 80%;
+  background-color: #808080;
+} /* Dark Grey */
+.w50 {
+  width: 50%;
+  background-color: cadetblue;
+}
+
+/* Responsive  */
+@media (max-width: 1300px) {
+  a.toggleButton {
+    left: 10px;
+    top: 10px;
+  }
+}
+@media (max-width: 900px) {
+  .infoContainer {
+    width: 50vw;
+    height: 80vh;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin: 40px auto;
+  }
+  .infoContainer span {
+    text-align: center;
+  }
+  .hello {
+    font-size: 20px;
+  }
+  .name {
+    font-weight: bold;
+    font-size: 30px;
+  }
+  .about {
+    font-size: 17px;
+  }
+  .description {
+    font-size: 17px;
+    margin-top: 15px;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .infoContainer .devPic img {
+    height: 25vh;
+    display: flex;
+    border-radius: 55%;
+    border: 2px solid white;
+    /* text-align: center; */
+    margin: auto;
+  }
+}
+/* About Page */
+@media (max-width: 1250px) {
+  .aboutContainer {
+    width: 70vw;
+  }
+  .aboutContainer .aboutDesc {
+    padding-top: 0px;
+  }
+}
+@media (max-width: 950px) {
+  .aboutContainer {
+    height: 40vh;
+    width: 60vw;
+  }
+  .aboutContainer .aboutDesc {
+    padding-top: 0px;
+  }
+}
+@media (max-width: 700px) {
+  .aboutContainer .aboutDesc p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 640px) {
+  .aboutContainer .aboutDesc p {
+    font-size: 15px;
+  }
+  .aboutContainer {
+    height: 35vh;
+    width: 60vw;
+  }
+  .navBar .main {
+    height: 1350px;
+  }
+}
+@media (max-width: 540px) {
+  .aboutContainer .aboutDesc p {
+    font-size: 15px;
+  }
+  .aboutContainer {
+    height: 50vh;
+    width: 50vw;
+  }
+}
+/* Project Page */
+@media (min-width: 1440px) {
+  .projContainer .proj img {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (max-width: 500px) {
+  .projContainer .proj img {
+    width: 150px;
+    height: 150px;
+  }
+  .proj button {
+    font-size: 10px;
+  }
+}
+/* Blog */

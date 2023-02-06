@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Surya L - Developer , Programmer , Content Writter</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <!-- <h1 class="logo">Surya L</h1>   -->
+        <a class="toggleButton" href="#" id="toggleButton">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </a>
+          <nav class="navBar" id="navBar">
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="/intro.html">My Intro</a></li>
+              <li><a href="/project.html">Projects</a></li>
+              <li><a href="/blog.html">Blog</a></li>
+              <li><a href="/contact.html">Contact Me</a></li>
+          </nav>
+      </div>
+      <div class="main">
+        <div class="contactForm">
+          <h1>Contact Me for Work / General Enquires</h1>
+          <form action="mailto:Suryaraj8147@gmail.com" method="post">
+              <div class="formInputs">
+                <label for="formName">Enter Your Name:</label>
+              <input
+                type="text"
+                name="Name"
+                id="formName"
+                placeholder="Enter Your Name" required
+              />
+            </div>
+            <div class="formInputs">
+                <label for="formEmail">Email Address:</label>
+              <input
+                type="email"
+                name="Email"
+                id="formEmail"
+                placeholder="Enter Your Email Id" required
+              />
+            </div>
+            <div class="formInputs">
+                <label for="formPhone">Phone No:</label>
+                <input type="tel" name="Phone" id="formPhone" placeholder="Phone No">
+            </div>
+            <div class="formInputs">
+                <label for="formMessage">Message:</label>
+                <textarea name="Message" id="formMessage" cols="30" rows="10" placeholder="Enter your Message"></textarea>
+            </div>
+            <div class="formInputs">
+                <button type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
